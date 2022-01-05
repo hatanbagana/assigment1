@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Rock+3D&family=Vujahday+Script&display=swap');
+
+body{
+    font-family: 'Poppins';
+}
+
+body a{
+    text-decoration: none;
+    color: #F58A07;
+}
+
+
+
+
+
+#page{
+    color: #F58A07;
+}
+.searchbar{
+   
+    border-color: #F58A07;
+}
+
+body a:hover{
+    color: #F58A07;
+}
+
+main .row{
+    padding:40px 0px 20px 60px ;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+main col{
+    width: 100%;
+    display: flex;
+}
+main .zuun{
+    width: calc(100%/2-5px);
+    display: flex;
+
+
+}
+main .baruun{
+    width: calc(100%/2-5px);
+}
+
+@media screen and(min-width: 700px)
+{
+    main .row{
+        padding: 0;
+    }
+
+    main h5{
+        font-size: 10px;
+        color: white;
+    }
+}
+#carouselExampleControls .carousel-inner{
+    height: 100%;
+    overflow: hidden;
+}
+
+#carouselExampleControls{
+    height: 70vh;
+}
+
+.container .sd{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.container .sd a{
+    color: white;
+    background-color: #F58A07;
+    border-radius: 20px ;
+    padding: 10px 30px ;
+}
+.container .sd h3{
+    border-left: 10px solid #F58A07;
+    padding-left: 10px;
+}
+
+#zurag{
+    padding: 20px;
+    border-radius: 20px;
+    
+}
