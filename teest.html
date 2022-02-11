@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/j.css">
+
+</head>
+<body style="background-color: aqua; display: flex; justify-content: center;">
+    
+    <form action="">
+
+        <input type="button" id="txt" value="START">
+        
+        <div id="div1" style="  display: inline-block; "></div>
+
+    </form>
+</body>
+<script>
+        document.getElementById("txt").addEventListener('click', () =>{
+            var executed = false;
+            
+        console.log('hi');
+        let a = document.createElement('input');
+        a.setAttribute('type', 'text');
+        a.setAttribute('id', 'input1')
+        a.setAttribute('placeholder', 'Enter username')
+        let a1 = document.createElement('input');
+        a1.setAttribute('type', 'password');
+        a1.setAttribute('id', 'password');
+        a1.setAttribute('placeholder', 'Enter password')
+        let a2 = document.createElement('input');
+        a2.setAttribute('value', 'signup')
+        a2.setAttribute('type', 'button')
+        a2.setAttribute('id', 'btn1')
+        a2.setAttribute("href", "index.html")
+        let c = document.createTextNode("hi");
+        let b = document.getElementById('div1');
+        a.appendChild(c);
+        b.appendChild(a);
+        b.appendChild(a1);
+        b.appendChild(a2);
+
+        document.getElementById('btn1').addEventListener('click', ()=>{
+            document.getElementById('btn1').setAttribute('value', 'login');
+            
+            const utga = document.getElementById('input1').value;
+            const utga1 = document.getElementById('password').value;
+            
+            document.getElementById('btn1').addEventListener('click', ()=>{
+                
+            const username = document.getElementById('input1').value;
+            const password = document.getElementById('password').value;
+            if(username == utga && utga1 == password){
+                alert("amjilttai nevterlee")
+
+            }else{
+                alert("username passwordo shalgana uu")
+            }
+            })
+
+        })
+        })
+
+
+
+</script>
+
+</html>

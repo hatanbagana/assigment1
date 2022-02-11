@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="Dar" onclick="shuffle()">
+    <p id="text"></p>
+    <p id="answer"></p>
+    <p id="test">hi</p>
+    <input type="text" id="a">
+    <button onclick={hi(ner)}>DAR</button>
+    <input type="button" value="dar" id="btn">
+    <p id="sdave" style="display: flex; justify-content: center;"> HARIU CN END GARJ IRNE</p>
+</body>
+<script src="dhiad.js"></script>
+<script> 
+
+</script>
+<script>
+
+
+
+
+
+
+
+
+
+    var ner;
+    document.getElementById('a').value = ner;
+    console.log(ner);
+function hi(a){
+    document.getElementById(a).innerHTML='TA DARLAA TIIME EDR';
+    document.getElementById(a).style.fontSize='30px';
+    document.getElementById(a).style.backgroundColor='black';
+    document.getElementById(a).style.color='white';
+    document.getElementById(a).style.border='1px solid green';
+    document.getElementById(a).style.borderRadius='20px';
+}
+
+
+</script>
+<script>
+function shuffle(array) {
+    let   randomIndex;
+  
+    for (let i = 0; i < array.length; i++) {
+        let currentIndex = array[i].length
+        
+    for (let j = 0; j < array[i].length; j++) {
+        
+        while (currentIndex != 0) {
+            aaash = array[i][j]
+      
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex--;
+      
+          array[i][j] = array[i][randomIndex]
+          array[i][randomIndex] = aaash;
+    
+        }
+    }
+        
+    }
+    return array;
+  }
+  
+  var arr = [[2, 11, 37, 42], [1,2,3,4], [4,5,6,7], [6,7,8,9]];
+  shuffle(arr);
+  console.log(arr);
+  document.getElementById("text").innerHTML = arr;
+
+
+
+
+
+
+
+
+  let cars = [
+
+  {
+      color: 'red',
+      price: 20000,
+      brand: "Toyota",
+      mark: "Land200"
+  },
+  {
+      color: 'blue',
+      price: 20000,
+      brand: "Toyota",
+      mark: "Land80"
+  },
+  {
+      color: 'green',
+      price: 30000,
+      brand: "Toyota",
+      mark: "Land100"
+  },
+  {
+      color: 'yellow',
+      price: 50000,
+      brand: "Toyota",
+      mark: "Land300"
+  },
+  ]
+  console.log(cars);
+</script>
+</html>
